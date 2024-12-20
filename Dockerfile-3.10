@@ -6,5 +6,4 @@ ENV UV_LINK_MODE=copy
 ENV UV_PYTHON_DOWNLOADS=never
 ENV UV_PYTHON=python3.10
 RUN apt-get update -qq && apt-get -y dist-upgrade && apt-get -y install --no-install-recommends --no-install-suggests curl git zip unzip wget nano unixodbc-dev tdsodbc && apt-get clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log}
-ADD https://astral.sh/uv/install.sh /install.sh
-RUN chmod -R 655 /install.sh && /install.sh && rm /install.sh
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
