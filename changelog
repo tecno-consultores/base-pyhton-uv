@@ -1,4 +1,16 @@
-commit f5807f9a672977d532e384e4abe8dfd08d500f51 (HEAD -> main, origin/main, origin/HEAD)
+commit 00bfe9ce163b2ba380b6751da7dffbe1ac0b4ce3 (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Thu Dec 19 21:45:53 2024 -0400
+
+    * readme
+
+commit f415460c25f03fb9b45033adf389a7247286444c
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Thu Dec 19 21:43:33 2024 -0400
+
+    * changelog
+
+commit f5807f9a672977d532e384e4abe8dfd08d500f51
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Thu Dec 19 21:43:23 2024 -0400
 
