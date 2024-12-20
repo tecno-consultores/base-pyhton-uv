@@ -5,6 +5,5 @@ ENV UV_COMPILE_BYTECODE=1
 ENV UV_LINK_MODE=copy
 ENV UV_PYTHON_DOWNLOADS=never
 ENV UV_PYTHON=python3.12
-RUN apt-get update -qq && apt-get -y dist-upgrade && apt-get -y install --no-install-recommends --no-install-suggests curl git zip unzip wget nano unixodbc-dev tdsodbc && apt-get clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log}
-COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
-
+RUN apt-get update -qq && apt-get -y dist-upgrade && apt-get -y install --no-install-recommends --no-install-suggests curl git zip unzip wget nano pipx unixodbc-dev tdsodbc && apt-get clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log}
+RUN pipx install uv
