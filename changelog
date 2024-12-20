@@ -1,4 +1,16 @@
-commit ede1b3da524a45c34062500a72473039078dfd23 (HEAD -> main, origin/main)
+commit 814f699e10d948b3adb3c4a139ccfb81476bf4e7 (HEAD -> main, origin/main)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Thu Dec 19 20:58:50 2024 -0400
+
+    * autores
+
+commit 1e27aee38edafffb95bb4516055aed3e300a2d25
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Thu Dec 19 20:49:06 2024 -0400
+
+    * changelog
+
+commit ede1b3da524a45c34062500a72473039078dfd23
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Thu Dec 19 20:48:57 2024 -0400
 
