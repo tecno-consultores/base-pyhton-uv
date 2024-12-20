@@ -1,4 +1,50 @@
-commit b5b86d9959dac792df5ab175e5a03f5990a239c1 (HEAD -> main, origin/main)
+commit f5807f9a672977d532e384e4abe8dfd08d500f51 (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Thu Dec 19 21:43:23 2024 -0400
+
+    * dependencias
+
+commit 18bfaa1c7e09334f90e2781def8e11b41e47d36b
+Merge: 2e415db 6b23e48
+Author: Jesús Palencia <sinfallas@gmail.com>
+Date:   Thu Dec 19 21:39:54 2024 -0400
+
+    Merge pull request #1 from ecrespo/using_pipx
+    
+    Added pipx package and install uv using pipx
+
+commit 6b23e480d4a660a645317a184174c2d0898acf26
+Merge: 8ee5906 2e415db
+Author: Ernesto Crespo <ecrespo@gmail.com>
+Date:   Thu Dec 19 21:30:47 2024 -0400
+
+    Merge branch 'main' into using_pipx
+
+commit 8ee5906868fa262f7fafecf22911083ecc1e6861
+Author: Ernesto Crespo <ecrespo@protonmail.com>
+Date:   Thu Dec 19 21:28:00 2024 -0400
+
+    Removed copy
+
+commit a7b8dd7703bc04d5bea6fc020633eb52bb50ef6a
+Author: Ernesto Crespo <ecrespo@protonmail.com>
+Date:   Thu Dec 19 21:24:42 2024 -0400
+
+    Updated Dockerfile with copy from Docker image source
+
+commit 2cdb6ed2655545c7d39c6f82f07d595aa0d66d8e
+Author: Ernesto Crespo <ecrespo@protonmail.com>
+Date:   Thu Dec 19 21:24:07 2024 -0400
+
+    Added gitignore file
+
+commit 2e415dbc2bf7924966d5d54cae324b60c27bfac8 (tag: v1.1)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Thu Dec 19 21:22:13 2024 -0400
+
+    * changelog
+
+commit b5b86d9959dac792df5ab175e5a03f5990a239c1
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Thu Dec 19 21:22:05 2024 -0400
 
@@ -16,7 +62,7 @@ Date:   Thu Dec 19 21:11:16 2024 -0400
 
     * copying
 
-commit 8d1e71996d4ea55c94a3f8f00dca8b3490d2c198
+commit 8d1e71996d4ea55c94a3f8f00dca8b3490d2c198 (tag: v1.0)
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Thu Dec 19 21:03:59 2024 -0400
 
