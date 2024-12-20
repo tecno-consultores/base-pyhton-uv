@@ -4,14 +4,16 @@ A Python (Debian) Docker image with UV. The tag corresponds to the python versio
 
 List of installed packages:
 
+* build-essential
+* gettext
+* ca-certificates
 * curl
 * git
 * zip
 * unzip
 * wget
 * nano
-* unixodbc-dev
-* tdsodbc
+* pipx
 
 Get this image on:
 
