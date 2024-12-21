@@ -1,10 +1,14 @@
+ARG PYTHON_VERSION=3.10
+ARG BASE_RUNTIME_DISTRO=slim-bookworm
 FROM python:3.10-slim-bookworm
 LABEL maintainer="sinfallas@gmail.com, ecrespo@gmail.com"
-LABEL build_date="2024-12-19"
+LABEL build_date="2024-12-21"
+RUN apt update -qq && apt -y dist-upgrade && apt -y install --no-install-recommends --no-install-suggests build-essential gettext ca-certificates curl git zip unzip wget nano && apt clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log}
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+RUN curl -LsSf https://astral.sh/ruff/install.sh | sh
+ENV PATH="/root/.local/bin/:$PATH"
 ENV UV_COMPILE_BYTECODE=1
 ENV UV_LINK_MODE=copy
 ENV UV_PYTHON_DOWNLOADS=never
 ENV UV_PYTHON=python3.10
-RUN apt-get update -qq && apt-get -y dist-upgrade && apt-get -y install --no-install-recommends --no-install-suggests build-essential gettext ca-certificates curl git zip unzip wget nano && apt clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log}
-RUN curl -LsSf https://astral.sh/uv/install.sh | sh
-RUN curl -LsSf https://astral.sh/ruff/install.sh | sh
+
