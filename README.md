@@ -1,8 +1,8 @@
 # base-python-uv
 
-A Python (Debian) Docker image with UV. The tag corresponds to the python version
+A Python (Debian) Docker image with UV and RUFF. The tag corresponds to the python version
 
-List of installed packages:
+List of installed S.O. packages:
 
 * build-essential
 * gettext
@@ -14,6 +14,11 @@ List of installed packages:
 * wget
 * nano
 * pipx
+
+List of installed Python packages:
+
+* uv
+* ruff
 
 Get this image on:
 
