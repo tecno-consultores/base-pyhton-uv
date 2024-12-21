@@ -1,4 +1,16 @@
-commit 20a1f5450d9e0d8170b28490bfc19656e7226c0c (HEAD -> main, origin/main, origin/HEAD)
+commit 370644be6a2d7bae17439ed34fd25f121619519f (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sat Dec 21 12:13:35 2024 -0400
+
+    * ruff
+
+commit 696c56814177c7062e613a68e1dcf9ee2947d44a
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Thu Dec 19 22:07:37 2024 -0400
+
+    * changelog
+
+commit 20a1f5450d9e0d8170b28490bfc19656e7226c0c
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Thu Dec 19 22:07:28 2024 -0400
 
