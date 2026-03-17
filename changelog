@@ -1,4 +1,16 @@
-commit f256b2c063baa06644c94284a3c687fe14d78965 (HEAD -> main, origin/main, origin/HEAD)
+commit 56e30a7d9a562fbe128ae3a83e76832cce206690 (HEAD -> main, origin/main, origin/HEAD)
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Tue Mar 17 13:23:23 2026 -0400
+
+    * gnupg
+
+commit d8206b00919a924a4936502c6091f8e8c0ad59a5
+Author: Jesus Palencia <sinfallas@gmail.com>
+Date:   Sat Jan 17 10:35:49 2026 -0400
+
+    * changelog
+
+commit f256b2c063baa06644c94284a3c687fe14d78965
 Author: Jesus Palencia <sinfallas@gmail.com>
 Date:   Sat Jan 17 10:35:41 2026 -0400
 
