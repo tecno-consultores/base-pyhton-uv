@@ -1,183 +1,195 @@
-commit 56e30a7d9a562fbe128ae3a83e76832cce206690 (HEAD -> main, origin/main, origin/HEAD)
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Tue Mar 17 13:23:23 2026 -0400
-
-    * gnupg
-
-commit d8206b00919a924a4936502c6091f8e8c0ad59a5
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Sat Jan 17 10:35:49 2026 -0400
-
-    * changelog
-
-commit f256b2c063baa06644c94284a3c687fe14d78965
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Sat Jan 17 10:35:41 2026 -0400
-
-    * build script
-
-commit 8045dd67cefae14e170d7168734a64be49bf88d7
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Sun Oct 12 07:44:24 2025 -0400
-
-    * changelog
-
-commit f3aaad699a239158463a51e1f73397c39f933b89
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Sun Oct 12 07:44:17 2025 -0400
-
-    * update
-
-commit 2ce25d0a8fc9a9192f66c815c3a4fe368a2cc498
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Sat Dec 21 12:48:06 2024 -0400
-
-    * changelog
-
-commit 7adf868fb5d7d94b6a78012bc1b3b9b08fbcb600
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Sat Dec 21 12:47:55 2024 -0400
-
-    * mejoras
-
-commit 5ea6e8cb1d2dc60b0df028c38ad743825a32c997
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Sat Dec 21 12:13:45 2024 -0400
-
-    * changelog
-
-commit 370644be6a2d7bae17439ed34fd25f121619519f
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Sat Dec 21 12:13:35 2024 -0400
-
-    * ruff
-
-commit 696c56814177c7062e613a68e1dcf9ee2947d44a
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 22:07:37 2024 -0400
-
-    * changelog
-
-commit 20a1f5450d9e0d8170b28490bfc19656e7226c0c
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 22:07:28 2024 -0400
-
-    * bugfix
-
-commit aca09fe79ba923c5f6c4c010279ce3695a8c7b9e
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:46:01 2024 -0400
-
-    * changelog
-
-commit 00bfe9ce163b2ba380b6751da7dffbe1ac0b4ce3
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:45:53 2024 -0400
-
-    * readme
-
-commit f415460c25f03fb9b45033adf389a7247286444c
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:43:33 2024 -0400
-
-    * changelog
-
-commit f5807f9a672977d532e384e4abe8dfd08d500f51
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:43:23 2024 -0400
-
-    * dependencias
-
-commit 18bfaa1c7e09334f90e2781def8e11b41e47d36b
-Merge: 2e415db 6b23e48
-Author: Jesús Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:39:54 2024 -0400
-
-    Merge pull request #1 from ecrespo/using_pipx
-    
-    Added pipx package and install uv using pipx
-
-commit 6b23e480d4a660a645317a184174c2d0898acf26
-Merge: 8ee5906 2e415db
-Author: Ernesto Crespo <ecrespo@gmail.com>
-Date:   Thu Dec 19 21:30:47 2024 -0400
-
-    Merge branch 'main' into using_pipx
-
-commit 8ee5906868fa262f7fafecf22911083ecc1e6861
-Author: Ernesto Crespo <ecrespo@protonmail.com>
-Date:   Thu Dec 19 21:28:00 2024 -0400
-
-    Removed copy
-
-commit a7b8dd7703bc04d5bea6fc020633eb52bb50ef6a
-Author: Ernesto Crespo <ecrespo@protonmail.com>
-Date:   Thu Dec 19 21:24:42 2024 -0400
-
-    Updated Dockerfile with copy from Docker image source
-
-commit 2cdb6ed2655545c7d39c6f82f07d595aa0d66d8e
-Author: Ernesto Crespo <ecrespo@protonmail.com>
-Date:   Thu Dec 19 21:24:07 2024 -0400
-
-    Added gitignore file
-
-commit 2e415dbc2bf7924966d5d54cae324b60c27bfac8 (tag: v1.1)
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:22:13 2024 -0400
-
-    * changelog
-
-commit b5b86d9959dac792df5ab175e5a03f5990a239c1
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:22:05 2024 -0400
-
-    * bugfix
-
-commit b52916f38767a1156fdb6ba8f359ad531c6c1c3f
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:11:36 2024 -0400
-
-    * changelog
-
-commit ef70ae21b9df246a83afba637d5748634f45f822
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:11:16 2024 -0400
-
-    * copying
-
-commit 8d1e71996d4ea55c94a3f8f00dca8b3490d2c198 (tag: v1.0)
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:03:59 2024 -0400
-
-    * changelog
-
-commit 4254880ea58ddc9a57ca871625a6c99600e88b01
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 21:03:51 2024 -0400
-
-    * readme
-
-commit 90c8e9a181267a0b632090efd0c72321c6b99df2
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 20:58:59 2024 -0400
-
-    * changelog
-
-commit 814f699e10d948b3adb3c4a139ccfb81476bf4e7
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 20:58:50 2024 -0400
-
-    * autores
-
-commit 1e27aee38edafffb95bb4516055aed3e300a2d25
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 20:49:06 2024 -0400
-
-    * changelog
-
-commit ede1b3da524a45c34062500a72473039078dfd23
-Author: Jesus Palencia <sinfallas@gmail.com>
-Date:   Thu Dec 19 20:48:57 2024 -0400
-
-    * primer commit
+* commit 73e792906975da12c922901ee63a43f809ac456c (HEAD -> main, origin/main, origin/HEAD)
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sun Mar 29 15:38:15 2026 -0400
+| 
+|     * armv7
+| 
+* commit 699ecf48b9636db84ecc44a3529f1b33a9cdfe3a
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Tue Mar 17 13:23:34 2026 -0400
+| 
+|     * changelog
+| 
+* commit 56e30a7d9a562fbe128ae3a83e76832cce206690
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Tue Mar 17 13:23:23 2026 -0400
+| 
+|     * gnupg
+| 
+* commit d8206b00919a924a4936502c6091f8e8c0ad59a5
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sat Jan 17 10:35:49 2026 -0400
+| 
+|     * changelog
+| 
+* commit f256b2c063baa06644c94284a3c687fe14d78965
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sat Jan 17 10:35:41 2026 -0400
+| 
+|     * build script
+| 
+* commit 8045dd67cefae14e170d7168734a64be49bf88d7
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sun Oct 12 07:44:24 2025 -0400
+| 
+|     * changelog
+| 
+* commit f3aaad699a239158463a51e1f73397c39f933b89
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sun Oct 12 07:44:17 2025 -0400
+| 
+|     * update
+| 
+* commit 2ce25d0a8fc9a9192f66c815c3a4fe368a2cc498
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sat Dec 21 12:48:06 2024 -0400
+| 
+|     * changelog
+| 
+* commit 7adf868fb5d7d94b6a78012bc1b3b9b08fbcb600
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sat Dec 21 12:47:55 2024 -0400
+| 
+|     * mejoras
+| 
+* commit 5ea6e8cb1d2dc60b0df028c38ad743825a32c997
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sat Dec 21 12:13:45 2024 -0400
+| 
+|     * changelog
+| 
+* commit 370644be6a2d7bae17439ed34fd25f121619519f
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Sat Dec 21 12:13:35 2024 -0400
+| 
+|     * ruff
+| 
+* commit 696c56814177c7062e613a68e1dcf9ee2947d44a
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 22:07:37 2024 -0400
+| 
+|     * changelog
+| 
+* commit 20a1f5450d9e0d8170b28490bfc19656e7226c0c
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 22:07:28 2024 -0400
+| 
+|     * bugfix
+| 
+* commit aca09fe79ba923c5f6c4c010279ce3695a8c7b9e
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 21:46:01 2024 -0400
+| 
+|     * changelog
+| 
+* commit 00bfe9ce163b2ba380b6751da7dffbe1ac0b4ce3
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 21:45:53 2024 -0400
+| 
+|     * readme
+| 
+* commit f415460c25f03fb9b45033adf389a7247286444c
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 21:43:33 2024 -0400
+| 
+|     * changelog
+| 
+* commit f5807f9a672977d532e384e4abe8dfd08d500f51
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 21:43:23 2024 -0400
+| 
+|     * dependencias
+|   
+*   commit 18bfaa1c7e09334f90e2781def8e11b41e47d36b
+|\  Merge: 2e415db 6b23e48
+| | Author: Jesús Palencia <sinfallas@gmail.com>
+| | Date:   Thu Dec 19 21:39:54 2024 -0400
+| | 
+| |     Merge pull request #1 from ecrespo/using_pipx
+| |     
+| |     Added pipx package and install uv using pipx
+| |   
+| *   commit 6b23e480d4a660a645317a184174c2d0898acf26
+| |\  Merge: 8ee5906 2e415db
+| |/  Author: Ernesto Crespo <ecrespo@gmail.com>
+|/|   Date:   Thu Dec 19 21:30:47 2024 -0400
+| |   
+| |       Merge branch 'main' into using_pipx
+| | 
+* | commit 2e415dbc2bf7924966d5d54cae324b60c27bfac8 (tag: v1.1)
+| | Author: Jesus Palencia <sinfallas@gmail.com>
+| | Date:   Thu Dec 19 21:22:13 2024 -0400
+| | 
+| |     * changelog
+| | 
+* | commit b5b86d9959dac792df5ab175e5a03f5990a239c1
+| | Author: Jesus Palencia <sinfallas@gmail.com>
+| | Date:   Thu Dec 19 21:22:05 2024 -0400
+| | 
+| |     * bugfix
+| | 
+* | commit b52916f38767a1156fdb6ba8f359ad531c6c1c3f
+| | Author: Jesus Palencia <sinfallas@gmail.com>
+| | Date:   Thu Dec 19 21:11:36 2024 -0400
+| | 
+| |     * changelog
+| | 
+* | commit ef70ae21b9df246a83afba637d5748634f45f822
+| | Author: Jesus Palencia <sinfallas@gmail.com>
+| | Date:   Thu Dec 19 21:11:16 2024 -0400
+| | 
+| |     * copying
+| | 
+| * commit 8ee5906868fa262f7fafecf22911083ecc1e6861
+| | Author: Ernesto Crespo <ecrespo@protonmail.com>
+| | Date:   Thu Dec 19 21:28:00 2024 -0400
+| | 
+| |     Removed copy
+| | 
+| * commit a7b8dd7703bc04d5bea6fc020633eb52bb50ef6a
+| | Author: Ernesto Crespo <ecrespo@protonmail.com>
+| | Date:   Thu Dec 19 21:24:42 2024 -0400
+| | 
+| |     Updated Dockerfile with copy from Docker image source
+| | 
+| * commit 2cdb6ed2655545c7d39c6f82f07d595aa0d66d8e
+|/  Author: Ernesto Crespo <ecrespo@protonmail.com>
+|   Date:   Thu Dec 19 21:24:07 2024 -0400
+|   
+|       Added gitignore file
+| 
+* commit 8d1e71996d4ea55c94a3f8f00dca8b3490d2c198 (tag: v1.0)
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 21:03:59 2024 -0400
+| 
+|     * changelog
+| 
+* commit 4254880ea58ddc9a57ca871625a6c99600e88b01
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 21:03:51 2024 -0400
+| 
+|     * readme
+| 
+* commit 90c8e9a181267a0b632090efd0c72321c6b99df2
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 20:58:59 2024 -0400
+| 
+|     * changelog
+| 
+* commit 814f699e10d948b3adb3c4a139ccfb81476bf4e7
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 20:58:50 2024 -0400
+| 
+|     * autores
+| 
+* commit 1e27aee38edafffb95bb4516055aed3e300a2d25
+| Author: Jesus Palencia <sinfallas@gmail.com>
+| Date:   Thu Dec 19 20:49:06 2024 -0400
+| 
+|     * changelog
+| 
+* commit ede1b3da524a45c34062500a72473039078dfd23
+  Author: Jesus Palencia <sinfallas@gmail.com>
+  Date:   Thu Dec 19 20:48:57 2024 -0400
+  
+      * primer commit
