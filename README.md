@@ -14,6 +14,7 @@ List of installed S.O. packages:
 * wget
 * nano
 * pipx
+* gnupg
 
 List of installed Python packages:
 
