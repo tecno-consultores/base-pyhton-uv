@@ -1,9 +1,8 @@
 ARG PYTHON_VERSION=3.12
 ARG BASE_RUNTIME_DISTRO=slim-bookworm
-ARG BUILD_DATE
 
 FROM python:${PYTHON_VERSION}-${BASE_RUNTIME_DISTRO}
-
+ARG BUILD_DATE
 LABEL org.opencontainers.image.authors="sinfallas@gmail.com, ecrespo@gmail.com"
 LABEL org.opencontainers.image.created=$BUILD_DATE
 
