@@ -2,9 +2,7 @@ ARG PYTHON_VERSION=3.13
 ARG BASE_RUNTIME_DISTRO=slim-bookworm
 
 FROM python:${PYTHON_VERSION}-${BASE_RUNTIME_DISTRO}
-ARG BUILD_DATE
 LABEL org.opencontainers.image.authors="sinfallas@gmail.com, ecrespo@gmail.com"
-LABEL org.opencontainers.image.created=$BUILD_DATE
 
 ENV PATH="/root/.local/bin/:$PATH"
 ENV UV_COMPILE_BYTECODE=1
@@ -17,3 +15,5 @@ RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 RUN curl -LsSf https://astral.sh/ruff/install.sh | sh
 
 CMD ["/bin/bash"]
+ARG BUILD_DATE
+LABEL org.opencontainers.image.created=$BUILD_DATE
