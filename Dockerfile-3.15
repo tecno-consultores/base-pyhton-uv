@@ -1,0 +1,20 @@
+ARG PYTHON_VERSION=3.15
+ARG BASE_RUNTIME_DISTRO=slim-bookworm
+
+FROM python:${PYTHON_VERSION}-${BASE_RUNTIME_DISTRO}
+LABEL org.opencontainers.image.authors="sinfallas@gmail.com"
+
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
+COPY --from=ghcr.io/astral-sh/ruff:latest /ruff /usr/local/bin/
+
+ENV UV_COMPILE_BYTECODE=1
+ENV UV_LINK_MODE=copy
+ENV UV_PYTHON_DOWNLOADS=never
+ENV UV_PYTHON=python${PYTHON_VERSION}
+
+RUN apt update -qq && apt -y dist-upgrade && apt -y install --no-install-recommends --no-install-suggests gnupg build-essential gettext ca-certificates curl git zip unzip wget nano && apt clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log}
+RUN python -m pip install --upgrade pip --no-cache-dir
+
+CMD ["/bin/bash"]
+ARG BUILD_DATE
+LABEL org.opencontainers.image.created=$BUILD_DATE
