@@ -23,3 +23,6 @@ List of installed Python packages:
 Get this image on:
 
 * https://hub.docker.com/r/sinfallas/base-python-uv
+
+
+Copyright (C) 2026 Jesus Palencia <sinfallas@gmail.com> (Creado en Tecno Consultores)
