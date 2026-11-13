@@ -2,19 +2,69 @@ ARG PYTHON_VERSION=3.13
 ARG BASE_RUNTIME_DISTRO=slim-trixie
 
 FROM python:${PYTHON_VERSION}-${BASE_RUNTIME_DISTRO}
-LABEL org.opencontainers.image.authors="sinfallas@gmail.com, ecrespo@gmail.com"
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /usr/local/bin/
 COPY --from=ghcr.io/astral-sh/ruff:latest /ruff /usr/local/bin/
 
-ENV UV_COMPILE_BYTECODE=1
-ENV UV_LINK_MODE=copy
-ENV UV_PYTHON_DOWNLOADS=never
-ENV UV_PYTHON=python${PYTHON_VERSION}
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    UV_COMPILE_BYTECODE=1 \
+    UV_LINK_MODE=copy \
+    UV_PYTHON_DOWNLOADS=never \
+    UV_PYTHON=python${PYTHON_VERSION} \
+    UV_CACHE_DIR=/tmp/uv-cache \
+    DEEPEVAL_TELEMETRY_OPT_OUT=YES
 
-RUN apt update -qq && apt -y dist-upgrade && apt -y install --no-install-recommends --no-install-suggests gnupg build-essential gettext ca-certificates curl git zip unzip wget nano && apt clean && apt -y autoremove && rm -rf /var/lib/{apt,dpkg,cache,log}
-RUN python -m pip install --upgrade pip --no-cache-dir
+WORKDIR /app
 
-CMD ["/bin/bash"]
+RUN DEBIAN_FRONTEND=noninteractive apt-get update -qq \
+    && DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade \
+    && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends --no-install-suggests \
+        gnupg build-essential gettext ca-certificates curl git zip unzip wget nano tesseract-ocr \
+    && apt-get clean \
+    && DEBIAN_FRONTEND=noninteractive apt-get -y autoremove --purge \
+    && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/* /tmp/*
+
+RUN groupadd -g 10001 appgroup \
+    && useradd -u 10001 -g appgroup -m -d /home/appuser -s /usr/sbin/nologin appuser \
+    && uv pip install --system --no-cache --upgrade \
+        "pip>=26.3" \
+        "setuptools>=82" \
+        "wheel" \
+        "dependency-groups" \
+        "distlib" \
+        "pyproject-hooks" \
+        "resolvelib" \
+        "pytest" \
+        "pytest-cov" \
+        "pytest-asyncio" \
+        "mypy" \
+        "bandit" \
+        "radon" \
+        "mutmut" \
+        "pip-audit" \
+        "deepeval>=4.0; python_version < '3.16'" \
+        "pact-python; python_version < '3.16'" \
+        "pypdf" \
+        "pillow" \
+        "pytesseract" \
+    && rm -rf /usr/local/lib/python*/ensurepip/_bundled \
+    && SITE_PKG="$(python3 -c 'import site; print(site.getsitepackages()[0])')" \
+    && find "${SITE_PKG}/pip/_vendor" -mindepth 1 ! -name '__init__.py' -exec rm -rf {} + \
+    && sed -i 's/^DEBUNDLED = False$/DEBUNDLED = True/' "${SITE_PKG}/pip/_vendor/__init__.py" \
+    && python3 -m compileall -q "${SITE_PKG}/pip/_vendor" \
+    && chmod -R a+rX /usr/local/bin /usr/local/lib/python* \
+    && chown -R 10001:10001 /app /home/appuser \
+    && rm -rf /root/.cache /tmp/*
+
 ARG BUILD_DATE
-LABEL org.opencontainers.image.created=$BUILD_DATE
+LABEL org.opencontainers.image.authors="Jesus Palencia <sinfallas@gmail.com> (Creado en Tecno Consultores)" \
+      org.opencontainers.image.description="Base Python 3.13 QA-11X v2 image with uv, ruff, AI evals, Pact, pip-audit and OCR" \
+      org.opencontainers.image.source="https://hub.docker.com/r/sinfallas/base-python-uv" \
+      org.opencontainers.image.licenses="GPL-2.0-only" \
+      org.opencontainers.image.created="${BUILD_DATE}"
+
+USER 10001:10001
+CMD ["/bin/bash"]
